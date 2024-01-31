@@ -10,8 +10,8 @@ app.setErrorHandler((error, request, reply) => {
 
 const start = async () => {
 
-    await app.register(routes)
     await app.register(cors)
+    await app.register(routes)
     
     try{
         await app.listen({ port: 3333})

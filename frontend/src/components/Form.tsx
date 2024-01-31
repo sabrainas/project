@@ -16,7 +16,7 @@ export const Form = () => {
             name: nameRef.current.value,
             email: emailRef.current.value
         })
-
+        console.log(response.data)
     }
 
       return (
